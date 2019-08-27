@@ -12,7 +12,7 @@ def cli(debug):
 
 
 @cli.command()
-@click.option("--count", "-c", type=int, default=1, help="Repetitions")
+@click.option("--count", "-c", default=1, help="Repetitions")
 @click.argument("name")
 def hello(name, count):
     """
@@ -25,7 +25,7 @@ def hello(name, count):
 
 
 @cli.command()
-@click.option("--count", "-c", type=int, default=1, help="Repetitions")
+@click.option("--count", "-c", default=1, help="Repetitions")
 @click.argument("name")
 def bye(name, count):
     """

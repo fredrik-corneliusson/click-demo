@@ -2,7 +2,7 @@ import click
 
 
 @click.command()
-@click.option("--count", "-c", type=int, default=1, help="Repetitions")
+@click.option("--count", "-c", default=1, help="Repetitions")
 @click.argument("name")
 def cli(name, count):
     """
